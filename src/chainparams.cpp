@@ -49,7 +49,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "NY Times 18/Nov/2018 Trump Names Supreme Court Candidates for a Nonexistent Vacancy";
-    const CScript genesisOutputScript = CScript() << ParseHex("040184913fa689ah5023620c80c3a49c8f13f8d49b8c851fbcbc8bc4a8e4d3eb4b10f4a4604fa089ce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130c7105cd6a820e03909a67961f0ea1f61def649f6bc3f4cef38c4e35504e51ac112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
